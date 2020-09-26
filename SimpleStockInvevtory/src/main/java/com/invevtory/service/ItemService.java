@@ -1,15 +1,23 @@
 package com.invevtory.service;
 
 import com.invevtory.dto.ItemDto;
-import com.invevtory.dto.ItemsCountDto;
 
 public interface ItemService {
 
 	boolean addItem(ItemDto itemDto);
-	
-	ItemDto findItemById(Integer id);
 
-	ItemsCountDto getCount(String name);
+	ItemDto deleteItem(String code);
+	
+	ItemDto findItem(String code);
+
+	int quantityByName(String name);
+
+	Iterable<ItemDto> getAllItems();
+
+	long getTotalAmount();
+
+	long getTotalAmountByName(String name);
+
 	
 	
 }

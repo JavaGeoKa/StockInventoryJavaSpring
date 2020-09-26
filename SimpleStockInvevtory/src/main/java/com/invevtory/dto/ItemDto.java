@@ -12,8 +12,8 @@ import lombok.Setter;
 @Setter
 public class ItemDto {
 
-	Integer id;
-	String name;
-	Integer count;
 	String code;
+	String name;
+	int amount;
+	
 }
